@@ -8,14 +8,18 @@
     <title>Document</title>
   </head>
   <body>
-    <section id="start-page" class="start-page hide">
+    <section id="start-page" class="start-page">
       <h1 id="title" class="title">Help me learn Vue JS!</h1>
       <button id="start-btn" class="btn start-btn">Start</button>
     </section>
 
-    <section id="game-page" class="game-page">
-      <img src="images/doodle.png" alt="" />
-      <p class="dialogue-box">words words words</p>
+    <section id="game-page" class="game-page hide">
+      <div class="flex-row">
+        <h1 class="invisible">I should be invisible!</h1>
+        <img src="images/doodle.png" alt="" />
+        <button id="btn next-btn" class="btn next-btn">Next</button>
+      </div>
+      <p id="dialogue" class="dialogue-box">words words words</p>
     </section>
 
     <script src="js/index.js"></script>

@@ -11,6 +11,22 @@
     border: 0.3rem solid black;
     border-radius: 2rem;
     width: 90vw;
-    height: 20vh;
+    height: 25vh;
     padding: 1rem;
+}
+
+.next-btn {
+    font-size: 2rem;
+    height: 3rem;
+    width: 7rem;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.invisible {
+    visibility: hidden;
 }
