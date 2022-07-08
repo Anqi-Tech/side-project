@@ -1,0 +1,16 @@
+.game-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dialogue-box {
+    font-size: 2rem;
+    border: 0.3rem solid black;
+    border-radius: 2rem;
+    width: 90vw;
+    height: 20vh;
+    padding: 1rem;
+}
