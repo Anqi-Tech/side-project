@@ -1,5 +1,6 @@
 .game-page {
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +26,23 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    height: 60vh;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
 }
 
 .invisible {
     visibility: hidden;
+}
+
+.choice-btn {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    width: 20vw;
+    text-align: center;
 }
