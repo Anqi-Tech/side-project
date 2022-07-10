@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <section id="start-page" class="start-page">
+    <section id="start-page" class="start-page hide">
       <h1 id="title" class="title">Help me learn Vue JS!</h1>
       <button id="start-btn" class="btn start-btn">Start</button>
     </section>
@@ -19,7 +19,13 @@
           <button id="choice-one" class="btn choice-btn hide">Yes</button>
           <h1 id="invisible" class="invisible">I should be invisible!</h1>
         </div>
-        <img src="images/neutral.png" alt="game image" id="game-img" />
+        <div>
+          <img src="images/neutral.png" alt="" id="img-neutral" />
+          <img src="images/happy.png" alt="" id="img-happy" class="hide" />
+          <img src="images/vue_god1.png" alt="" id="img-vg1" class="hide" />
+          <img src="images/vue_god2.png" alt="" id="img-vg2" class="hide" />
+          <img src="images/vue_god3.png" alt="" id="img-vg3" class="hide" />
+        </div>
         <div class="flex-column">
           <button id="choice-two" class="btn choice-btn hide">No</button>
           <button id="next-btn" class="btn next-btn">Next</button>
@@ -32,6 +38,12 @@
           Total clicks: <span id="click-number">0</span>
         </p>
       </div>
+    </section>
+
+    <section id="end-page">
+      <img src="images/ending1.png" alt="" id="img-ed1" class="ending-img" />
+      <h1>Ending Title</h1>
+      <p>Some random comment by me!</p>
     </section>
 
     <script src="js/index.js"></script>
