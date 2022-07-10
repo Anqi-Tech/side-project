@@ -64,6 +64,8 @@ function happyResponse() {
   annoyingPlaceholder.classList.remove("hide");
   choiceOne.classList.add("hide");
   choiceTwo.classList.add("hide");
+  const image = document.getElementById("game-img");
+  image.src = "images/neutral.png";
 }
 
 function startClicker() {
@@ -79,19 +81,19 @@ function showClicks() {
 
 function clickMilestones() {
   switch (true) {
-    case clickCount == 4:
+    case clickCount == 10:
       gamePage.style.backgroundColor = "green";
       break;
 
-    case clickCount == 3:
+    case clickCount == 25:
       gamePage.style.backgroundColor = "blue";
       break;
 
-    case clickCount == 2:
+    case clickCount == 50:
       gamePage.style.backgroundColor = "yellow";
       break;
 
-    case clickCount == 1:
+    case clickCount == 100:
       gamePage.style.backgroundColor = "red";
       break;
   }
