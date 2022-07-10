@@ -13,6 +13,13 @@ const clickNumber = document.getElementById("click-number");
 let currentDialogueIndex = 0;
 let clickCount = 0;
 
+const gameDialogue = [
+  { text: "Hello." },
+  { text: "So..." },
+  { text: "Are you here to teach me Vue?" },
+  { text: "Thank you!" },
+];
+
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
   currentDialogueIndex++;
@@ -67,11 +74,7 @@ function startClicker() {
 
 function showClicks() {
   clickNumber.innerText = clickCount;
+  clickMilestones();
 }
 
-const gameDialogue = [
-  { text: "Hello." },
-  { text: "So..." },
-  { text: "Are you here to teach me Vue?" },
-  { text: "Thank you!" },
-];
+function clickMilestones() {}
