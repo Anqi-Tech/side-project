@@ -29,6 +29,7 @@ nextButton.addEventListener("click", () => {
   setNextDialogue();
 });
 choiceOne.addEventListener("click", happyResponse);
+choiceTwo.addEventListener("click", badEnding);
 clickerButton.addEventListener("click", () => {
   clickCount++;
   showClicks();
@@ -112,4 +113,13 @@ function goodEnding() {
   endingTitle.innerText = "Ending 1 of 2: Vue God";
   comments.innerText =
     "Thanks for your help! Here, have this CG as a reward! (Listen, my stylus died and I was SUPER TIRED this was the best I could do.)";
+}
+
+function badEnding() {
+  gamePage.classList.add("hide");
+  endingPage.classList.remove("hide");
+  document.getElementById("img-ed2").classList.remove("hide");
+  endingTitle.innerText = "Ending 2 of 2: WHAT IS WRONG WITH YOU!";
+  comments.innerText =
+    "If you weren't going to help, why did you click start? Look, you wasted her time and made her mad! How about you refresh the page, AND CHOOSE CORRECTLY THIS TIME!";
 }
