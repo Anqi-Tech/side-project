@@ -9,6 +9,9 @@ const choiceTwo = document.getElementById("choice-two");
 const clickerSection = document.getElementById("clicker-section");
 const clickerButton = document.getElementById("clicker-btn");
 const clickNumber = document.getElementById("click-number");
+const endingPage = document.getElementById("ending-page");
+const endingTitle = document.getElementById("ending-title");
+const comments = document.getElementById("comments");
 
 let currentDialogueIndex = 0;
 let clickCount = 0;
@@ -104,4 +107,9 @@ function clickMilestones() {
 
 function goodEnding() {
   gamePage.classList.add("hide");
+  endingPage.classList.remove("hide");
+  document.getElementById("img-ed1").classList.remove("hide");
+  endingTitle.innerText = "Ending 1 of 2: Vue God";
+  comments.innerText =
+    "Thanks for your help! Here, have this CG as a reward! (Listen, my stylus died and I was SUPER TIRED this was the best I could do.)";
 }
