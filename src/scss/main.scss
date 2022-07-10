@@ -10,7 +10,7 @@ body {
 }
 
 img {
-  max-width: 35%;
+  width: 35vw;
   border: 1rem solid black;
 }
 
@@ -25,6 +25,7 @@ img {
 
 .btn:active {
   border: 0.2rem solid blue;
+  background-color: white;
 }
 
 .hide {

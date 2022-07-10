@@ -2,17 +2,17 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-}
+   }
 
 .dialogue-box {
     font-size: 2rem;
     border: 0.3rem solid black;
     border-radius: 2rem;
     width: 90vw;
-    height: 25vh;
+    height: 20vh;
     padding: 1rem;
 }
 
@@ -27,6 +27,7 @@
     justify-content: space-around;
     align-items: flex-end;
     height: 60vh;
+    width: 100vw;
 }
 
 .flex-column {
@@ -44,5 +45,20 @@
     font-size: 1.5rem;
     padding: 0.2rem;
     width: 20vw;
+    text-align: center;
+}
+
+.clicker-section {
+    padding: 3rem;
+   
+}
+
+.clicker-btn {
+    font-size: 2rem;
+    padding: 0rem 3rem;
+}
+
+.click-report {
+    font-size: 1.4rem;
     text-align: center;
 }
