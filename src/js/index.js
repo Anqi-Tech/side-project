@@ -77,4 +77,22 @@ function showClicks() {
   clickMilestones();
 }
 
-function clickMilestones() {}
+function clickMilestones() {
+  switch (true) {
+    case clickCount == 4:
+      gamePage.style.backgroundColor = "green";
+      break;
+
+    case clickCount == 3:
+      gamePage.style.backgroundColor = "blue";
+      break;
+
+    case clickCount == 2:
+      gamePage.style.backgroundColor = "yellow";
+      break;
+
+    case clickCount == 1:
+      gamePage.style.backgroundColor = "red";
+      break;
+  }
+}
